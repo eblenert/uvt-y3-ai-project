@@ -1,0 +1,34 @@
+% This is a simple sample document.  For more complicated documents take a look in the exercise tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+
+\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+
+\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
+
+\title{Music Genre Classification with Machine Learning} % Sets article title
+\author{Erik Blenert} % Sets authors name
+\date{\today} % Sets date for date compiled
+
+% The preamble ends with the command \begin{document}
+\begin{document} % All begin commands must be paired with an end command somewhere
+    \maketitle % creates title using information in preamble (title, author, date)
+    
+    \section{Requirements} % creates a section
+    
+    
+    The application will be trained with curated songs that are representative of the common music genres such as: 
+    \begin{itemize}
+        \item Electronic
+        \item HipHop
+        \item Rock
+        \item Jazz
+        \item etc
+    \end{itemize}
+
+    The application will be able to identify the genre of new a song or a list of songs in a folder given in CLI arguments. If the user wants, the application can write shown genres to the metadata of the MP3 files.
+    
+    If specified by the user, the application will also try to identify the energy level of the song on a scale of 1 to 5. A score of 1 means a chill, relaxed song. A score of 2-3 represents a good vibe.
+A song that is danceable. A score of 4-5 means it's a banger. A very popular and high energy song.
+
+    
+
+\end{document} % This is the end of the document
